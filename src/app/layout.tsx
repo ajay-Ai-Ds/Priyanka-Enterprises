@@ -38,6 +38,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.priyankaenterpriseshyderabad.com",
   },
+  verification: {
+    google: "5r3kQZoixhnEDL0Uv_UboRzJCIv4w5UXJz7iPnX5STc",
+  },
   robots: {
     index: true,
     follow: true,
