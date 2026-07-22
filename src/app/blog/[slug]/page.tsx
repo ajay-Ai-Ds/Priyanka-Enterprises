@@ -29,17 +29,17 @@ export function generateMetadata({ params }: Props): Metadata {
     title: `${post.title} | Priyanka Enterprises`,
     description: post.description,
     alternates: {
-      canonical: `https://priyankaenterprises.com/blog/${post.slug}`,
+      canonical: `https://www.priyankaenterpriseshyderabad.com/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://priyankaenterprises.com/blog/${post.slug}`,
+      url: `https://www.priyankaenterpriseshyderabad.com/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
       images: [
         {
-          url: `https://priyankaenterprises.com${post.image}`,
+          url: `https://www.priyankaenterpriseshyderabad.com${post.image}`,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -62,20 +62,20 @@ export default function BlogPostPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
-    image: [`https://priyankaenterprises.com${post.image}`],
+    image: [`https://www.priyankaenterpriseshyderabad.com${post.image}`],
     datePublished: post.date,
     dateModified: post.date,
     author: {
       "@type": "Organization",
       name: "Priyanka Enterprises",
-      url: "https://priyankaenterprises.com"
+      url: "https://www.priyankaenterpriseshyderabad.com"
     },
     publisher: {
       "@type": "Organization",
       name: "Priyanka Enterprises",
       logo: {
         "@type": "ImageObject",
-        url: "https://priyankaenterprises.com/images/logo_dark.png"
+        url: "https://www.priyankaenterpriseshyderabad.com/images/logo_dark.png"
       }
     },
     description: post.description

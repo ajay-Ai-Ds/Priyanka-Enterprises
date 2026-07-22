@@ -126,7 +126,7 @@ export function generateMetadata({ params }: { params: { locality: string } }) {
   const data = areasData[params.locality as keyof typeof areasData];
   if (!data) return { title: 'Not Found' };
   
-  const url = `https://priyankaenterprises.com/areas/${params.locality}`;
+  const url = `https://www.priyankaenterpriseshyderabad.com/areas/${params.locality}`;
   return {
     title: data.title,
     description: data.desc,
@@ -164,19 +164,19 @@ export default function LocalityPage({ params }: { params: { locality: string } 
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://priyankaenterprises.com"
+        "item": "https://www.priyankaenterpriseshyderabad.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Serve",
-        "item": "https://priyankaenterprises.com/areas"
+        "item": "https://www.priyankaenterpriseshyderabad.com/areas"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": data.name,
-        "item": `https://priyankaenterprises.com/areas/${params.locality}`
+        "item": `https://www.priyankaenterpriseshyderabad.com/areas/${params.locality}`
       }
     ]
   };

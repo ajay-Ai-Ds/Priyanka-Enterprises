@@ -4,12 +4,12 @@ export const metadata = {
   title: 'Areas We Serve in Hyderabad | Priyanka Enterprises',
   description: 'Priyanka Enterprises provides premium safety nets and invisible grills across major localities in Hyderabad including Gachibowli, Kondapur, and Manikonda.',
   alternates: {
-    canonical: 'https://priyankaenterprises.com/areas',
+    canonical: 'https://www.priyankaenterpriseshyderabad.com/areas',
   },
   openGraph: {
     title: 'Areas We Serve in Hyderabad | Priyanka Enterprises',
     description: 'Priyanka Enterprises provides premium safety nets and invisible grills across major localities in Hyderabad including Gachibowli, Kondapur, and Manikonda.',
-    url: 'https://priyankaenterprises.com/areas',
+    url: 'https://www.priyankaenterpriseshyderabad.com/areas',
     siteName: 'Priyanka Enterprises',
     locale: 'en_IN',
     type: 'website',
@@ -41,13 +41,13 @@ export default function AreasOverview() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://priyankaenterprises.com"
+        "item": "https://www.priyankaenterpriseshyderabad.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Areas We Serve",
-        "item": "https://priyankaenterprises.com/areas"
+        "item": "https://www.priyankaenterpriseshyderabad.com/areas"
       }
     ]
   };

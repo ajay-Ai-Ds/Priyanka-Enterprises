@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Blog & Expert Advice | Priyanka Enterprises Hyderabad",
   description: "Read expert guides and advice on balcony safety nets, invisible grills, pigeon control, and monkey protection for apartments in Hyderabad.",
   alternates: {
-    canonical: "https://priyankaenterprises.com/blog",
+    canonical: "https://www.priyankaenterpriseshyderabad.com/blog",
   },
 };
 

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Priyanka Enterprises Hyderabad" }],
   category: "Home Services",
   alternates: {
-    canonical: "https://priyankaenterprises.com",
+    canonical: "https://www.priyankaenterpriseshyderabad.com",
   },
   robots: {
     index: true,
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Priyanka Enterprises Hyderabad | Balcony Safety Nets & Invisible Grills",
     description: "Hyderabad's trusted safety net installation experts. Premium quality, UV-resistant materials, same-day service, & free inspection. Protect your family today!",
-    url: "https://priyankaenterprises.com",
+    url: "https://www.priyankaenterpriseshyderabad.com",
     siteName: "Priyanka Enterprises",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://priyankaenterprises.com/images/balcony.webp",
+        url: "https://www.priyankaenterpriseshyderabad.com/images/balcony.webp",
         width: 1200,
         height: 630,
         alt: "Priyanka Enterprises Installation in Hyderabad",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Priyanka Enterprises Hyderabad | Balcony Safety Nets",
     description: "Hyderabad's premium safety net experts. Same-day installation & free site inspection. Call +91 81214 88961.",
-    images: ["https://priyankaenterprises.com/images/balcony.webp"],
+    images: ["https://www.priyankaenterpriseshyderabad.com/images/balcony.webp"],
   }
 };
 
@@ -83,9 +83,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Priyanka Enterprises",
-    "image": "https://priyankaenterprises.com/images/balcony.webp",
-    "@id": "https://priyankaenterprises.com/#localbusiness",
-    "url": "https://priyankaenterprises.com",
+    "image": "https://www.priyankaenterpriseshyderabad.com/images/balcony.webp",
+    "@id": "https://www.priyankaenterpriseshyderabad.com/#localbusiness",
+    "url": "https://www.priyankaenterpriseshyderabad.com",
     "telephone": "+918121488961",
     "email": "mrjoe4425@gmail.com",
     "priceRange": "₹₹",
@@ -150,7 +150,7 @@ export default function RootLayout({
       "@type": "Service",
       "serviceType": "Balcony Safety Nets",
       "provider": {
-        "@id": "https://priyankaenterprises.com/#localbusiness"
+        "@id": "https://www.priyankaenterpriseshyderabad.com/#localbusiness"
       },
       "areaServed": {
         "@type": "City",
@@ -163,7 +163,7 @@ export default function RootLayout({
       "@type": "Service",
       "serviceType": "Invisible Grills",
       "provider": {
-        "@id": "https://priyankaenterprises.com/#localbusiness"
+        "@id": "https://www.priyankaenterpriseshyderabad.com/#localbusiness"
       },
       "areaServed": {
         "@type": "City",

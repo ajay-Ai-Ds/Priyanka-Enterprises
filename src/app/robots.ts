@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/test/', '/api/'],
     },
-    sitemap: 'https://priyankaenterprises.com/sitemap.xml',
+    sitemap: 'https://www.priyankaenterpriseshyderabad.com/sitemap.xml',
   };
 }
