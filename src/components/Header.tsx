@@ -116,13 +116,14 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center space-x-4">
-            <span className="flex items-center gap-1.5 font-medium">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              Open 24/7
-            </span>
+            <a 
+              href="tel:+918121488961" 
+              className="flex items-center gap-1.5 font-extrabold text-accent hover:text-white transition-colors tracking-wide"
+              aria-label="Call +91 81214 88961"
+            >
+              <Phone className="w-3.5 h-3.5 fill-accent" />
+              <span>Call: +91 81214 88961</span>
+            </a>
             <span className="hidden md:inline text-slate-300">|</span>
             <span className="hidden md:flex items-center gap-1 text-slate-300">
               <MapPin className="w-3.5 h-3.5 text-accent" />
@@ -132,15 +133,18 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <a 
               href="mailto:mrjoe4425@gmail.com" 
-              className="hover:text-white transition-colors flex items-center gap-1 text-slate-300"
+              className="hover:text-white transition-colors hidden sm:flex items-center gap-1 text-slate-300"
               aria-label="Email Us"
             >
               <Mail className="w-3.5 h-3.5 text-accent" />
-              <span className="hidden sm:inline">mrjoe4425@gmail.com</span>
+              <span>mrjoe4425@gmail.com</span>
             </a>
-            <span className="text-slate-500">|</span>
-            <span className="flex items-center gap-1 text-accent font-semibold">
-              <Sparkles className="w-3.5 h-3.5 animate-pulse" />
+            <span className="hidden sm:inline text-slate-500">|</span>
+            <span className="flex items-center gap-1.5 text-emerald-400 font-semibold">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
               Same Day Installation
             </span>
           </div>

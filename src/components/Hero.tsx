@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const slides = [
   {
-    image: "/images/carousel_pigeon_net.png",
+    image: "/images/pigeonsafetynet.webp",
     title: "Hyderabad's #1 Pigeon Safety Nets",
     titlePrefix: "Hyderabad's #1 ",
     titleHighlight: "Pigeon Safety Nets",
@@ -16,7 +16,7 @@ const slides = [
     tagline: "Same Day Installation"
   },
   {
-    image: "/images/carousel_invisible_grill.png",
+    image: "/images/balconygrill.webp",
     title: "Premium Invisible Grills for Modern Apartments",
     titlePrefix: "Premium ",
     titleHighlight: "Invisible Grills",
@@ -25,7 +25,7 @@ const slides = [
     tagline: "High-Tensile Stainless Steel"
   },
   {
-    image: "/images/carousel_child_safety.png",
+    image: "/images/clientwork (1).jpg",
     title: "Heavy-Duty Balcony Child Safety Nets",
     titlePrefix: "Heavy-Duty Balcony ",
     titleHighlight: "Child Safety Nets",
@@ -34,7 +34,7 @@ const slides = [
     tagline: "100% Child Proof"
   },
   {
-    image: "/images/carousel_cricket_net.png",
+    image: "/images/clientwork (2).jpg",
     title: "Professional Cricket & Sports Practice Nets",
     titlePrefix: "Professional ",
     titleHighlight: "Cricket & Sports Practice Nets",
@@ -43,7 +43,7 @@ const slides = [
     tagline: "UV-Stabilized Nets"
   },
   {
-    image: "/images/carousel_monkey_net.png",
+    image: "/images/clientwork (4).jpg",
     title: "Robust Wire-Reinforced Monkey Safety Nets",
     titlePrefix: "Robust Wire-Reinforced ",
     titleHighlight: "Monkey Safety Nets",
@@ -52,7 +52,7 @@ const slides = [
     tagline: "Bite-Resistant & Sturdy"
   },
   {
-    image: "/images/carousel_bird_protection.png",
+    image: "/images/clientwork (9).jpg",
     title: "Building Duct & Open Shaft Bird Protection",
     titlePrefix: "Building Duct & Open Shaft ",
     titleHighlight: "Bird Protection Nets",
@@ -61,7 +61,7 @@ const slides = [
     tagline: "Industrial-Grade Quality"
   },
   {
-    image: "/images/carousel_cloth_hanger.png",
+    image: "/images/clothhanger.jpg",
     title: "Ceiling-Mounted Space-Saving Cloth Hangers",
     titlePrefix: "Ceiling-Mounted Space-Saving ",
     titleHighlight: "Cloth Hangers",
@@ -177,11 +177,11 @@ export default function Hero() {
       {/* Standard HTML style tag to inject responsive styles for background overlay */}
       <style>{`
         .hero-gradient-overlay {
-          background: linear-gradient(to bottom, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.3) 100%);
+          background: linear-gradient(to bottom, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.2) 60%, rgba(15, 23, 42, 0.4) 100%);
         }
         @media (min-width: 1024px) {
           .hero-gradient-overlay {
-            background: linear-gradient(to right, rgba(0,0,0,0.65) 60%, rgba(0,0,0,0.2) 100%);
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.3) 50%, rgba(15, 23, 42, 0.1) 100%);
           }
         }
       `}</style>
@@ -203,12 +203,11 @@ export default function Hero() {
             <Image
               src={slides[currentSlide].image}
               alt={slides[currentSlide].title}
-              width={1920}
-              height={1080}
+              fill
               priority={currentSlide === 0}
               className="w-full h-full object-cover object-center"
-              style={{ filter: "saturate(1.4) brightness(0.85)" }}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1920px"
+              style={{ filter: "saturate(1.05) brightness(0.92) contrast(1.02)" }}
+              sizes="100vw"
             />
           </motion.div>
         </AnimatePresence>
@@ -242,7 +241,7 @@ export default function Hero() {
                   exit={{ opacity: 0, y: -15 }}
                   transition={{ duration: 0.3 }}
                   className="text-3xl sm:text-5.5xl lg:text-6.5xl font-extrabold tracking-tight font-display leading-[1.1] text-white"
-                  style={{ textShadow: "0px 2px 10px rgba(0,0,0,0.4)" }}
+                  style={{ textShadow: "0px 2px 14px rgba(0,0,0,0.85), 0px 1px 3px rgba(0,0,0,0.9)" }}
                 >
                   {slides[currentSlide].titlePrefix}
                   <span className="text-[#f97316]">
@@ -262,7 +261,7 @@ export default function Hero() {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
                   className="text-base sm:text-xl lg:text-2xl text-slate-100 font-medium leading-relaxed max-w-2xl"
-                  style={{ textShadow: "0px 1px 4px rgba(0,0,0,0.5)" }}
+                  style={{ textShadow: "0px 2px 8px rgba(0,0,0,0.85)" }}
                 >
                   {slides[currentSlide].subtitle}
                 </motion.p>
