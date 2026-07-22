@@ -147,15 +147,10 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Main Navbar floating wrapper */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div 
-          className={`transition-all duration-500 ${
-            isScrolled 
-              ? "mt-2 bg-white/95 backdrop-blur-lg border border-slate-200/80 shadow-xl rounded-2xl py-2.5 px-6" 
-              : "mt-4 bg-white/85 backdrop-blur-md border border-white/40 shadow-lg rounded-2xl py-4 px-6"
-          }`}
-        >
+      {/* Main Navbar wrapper */}
+      <div className={`transition-all duration-300 w-full bg-white/95 backdrop-blur-lg border-b border-slate-200 ${isScrolled ? "shadow-md" : ""}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className={`transition-all duration-300 lg:px-0 ${isScrolled ? "py-3" : "py-4"}`}>
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a
@@ -255,8 +250,9 @@ export default function Header() {
           </div>
         </div>
       </div>
+    </div>
 
-      {/* Mobile Menu Dropdown */}
+    {/* Mobile Menu Dropdown */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
