@@ -13,20 +13,60 @@ interface LogoProps {
 export default function Logo({
   height = 50,
   className = "",
+  isScrolled = false,
+  theme = "adaptive",
 }: LogoProps) {
+  const isDarkTheme =
+    theme === "dark" || (theme === "adaptive" && !isScrolled);
+
+  // High-contrast dynamic colors for maximum readability on mobile & desktop
+  const primaryColor = isDarkTheme ? "#ffffff" : "#0f172a"; // Crisp White on dark, Deep Slate/Black on light
+  const secondaryColor = isDarkTheme ? "#f97316" : "#ea580c"; // Vibrant Orange
+  const dividerColor = isDarkTheme ? "rgba(255, 255, 255, 0.35)" : "rgba(15, 23, 42, 0.25)";
+
   const parsedHeight = typeof height === "number" ? height : parseInt(height) || 50;
+  const iconSize = Math.round(parsedHeight * 0.95);
 
   return (
     <div className={`flex items-center select-none transition-all duration-300 ${className}`} style={{ height: parsedHeight }}>
-      <Image
-        src="/images/priyankalogo.jpg"
-        alt="Priyanka Enterprises Logo"
-        width={240}
-        height={parsedHeight * 2}
-        className="h-full w-auto object-contain rounded-lg shadow-sm"
-        priority
+      {/* priyankalogo.jpg Icon */}
+      <div 
+        className="relative flex-shrink-0 transition-all duration-300 rounded-xl overflow-hidden shadow-sm" 
+        style={{ width: iconSize, height: iconSize }}
+      >
+        <Image
+          src="/images/priyankalogo.jpg"
+          alt="Priyanka Enterprises Logo Icon"
+          fill
+          className="object-contain rounded-lg"
+          priority
+        />
+      </div>
+
+      {/* Divider */}
+      <div 
+        className="h-3/5 w-[1.5px] mx-2 sm:mx-3.5 transition-colors duration-300 flex-shrink-0" 
+        style={{ backgroundColor: dividerColor }}
       />
+
+      {/* Business Name Text - High Contrast & Guaranteed Mobile Visibility */}
+      <div className="flex flex-col justify-center leading-none whitespace-nowrap flex-shrink-0">
+        <span 
+          className="font-black tracking-wider text-base sm:text-xl font-display uppercase drop-shadow-sm"
+          style={{ color: primaryColor }}
+        >
+          PRIYANKA
+        </span>
+        <span 
+          className="font-extrabold tracking-widest text-[10px] sm:text-[12px] font-display uppercase mt-0.5"
+          style={{ color: secondaryColor }}
+        >
+          ENTERPRISES
+        </span>
+      </div>
     </div>
   );
 }
+
+
 
