@@ -191,7 +191,7 @@ export default function Hero() {
         <AnimatePresence initial={false}>
           <motion.div
             key={currentSlide}
-            initial={{ opacity: 0, scale: 1 }}
+            initial={currentSlide === 0 ? false : { opacity: 0, scale: 1 }}
             animate={{ opacity: 1, scale: 1.08 }}
             exit={{ opacity: 0 }}
             transition={{
@@ -205,9 +205,10 @@ export default function Hero() {
               alt={slides[currentSlide].title}
               fill
               priority={currentSlide === 0}
+              quality={85}
               className="w-full h-full object-cover object-center"
               style={{ filter: "saturate(1.05) brightness(0.92) contrast(1.02)" }}
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, 100vw"
             />
           </motion.div>
         </AnimatePresence>

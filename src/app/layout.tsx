@@ -182,6 +182,7 @@ export default function RootLayout({
       className={`${inter.variable} ${outfit.variable} scroll-smooth h-full antialiased`}
     >
       <head>
+        <link rel="preload" as="image" href="/images/pigeonsafetynet.webp" fetchPriority="high" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
