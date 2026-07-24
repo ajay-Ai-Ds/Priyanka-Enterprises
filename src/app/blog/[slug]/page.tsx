@@ -7,9 +7,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 interface Props {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export function generateStaticParams() {
@@ -18,8 +18,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const post = blogData.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogData.find((p) => p.slug === slug);
 
   if (!post) {
     return { title: "Post Not Found" };
@@ -49,8 +50,9 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function BlogPostPage({ params }: Props) {
-  const post = blogData.find((p) => p.slug === params.slug);
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
+  const post = blogData.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
@@ -113,6 +115,22 @@ export default function BlogPostPage({ params }: Props) {
             className="prose prose-slate prose-lg max-w-none prose-headings:font-display prose-headings:font-bold prose-a:text-primary hover:prose-a:text-primary-light prose-img:rounded-xl"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* Call To Action Box */}
+          <div className="mt-12 p-8 bg-slate-900 text-white rounded-3xl shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+              <h3 className="text-2xl font-bold font-display text-amber-400">Need Installation in Hyderabad?</h3>
+              <p className="text-slate-300 mt-1 text-sm">Get free site measurement & same-day installation from Priyanka Enterprises.</p>
+            </div>
+            <div className="flex items-center gap-3 shrink-0">
+              <a href="tel:+918121488961" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md">
+                Call Now
+              </a>
+              <a href="https://wa.me/918121488961" target="_blank" rel="noopener noreferrer" className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md">
+                WhatsApp
+              </a>
+            </div>
+          </div>
         </article>
 
         {relatedPosts.length > 0 && (

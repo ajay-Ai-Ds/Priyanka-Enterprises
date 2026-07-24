@@ -122,11 +122,12 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { locality: string } }) {
-  const data = areasData[params.locality as keyof typeof areasData];
+export async function generateMetadata({ params }: { params: Promise<{ locality: string }> }) {
+  const { locality } = await params;
+  const data = areasData[locality as keyof typeof areasData];
   if (!data) return { title: 'Not Found' };
   
-  const url = `https://www.priyankaenterpriseshyderabad.com/areas/${params.locality}`;
+  const url = `https://www.priyankaenterpriseshyderabad.com/areas/${locality}`;
   return {
     title: data.title,
     description: data.desc,
@@ -149,8 +150,9 @@ export function generateMetadata({ params }: { params: { locality: string } }) {
   };
 }
 
-export default function LocalityPage({ params }: { params: { locality: string } }) {
-  const data = areasData[params.locality as keyof typeof areasData];
+export default async function LocalityPage({ params }: { params: Promise<{ locality: string }> }) {
+  const { locality } = await params;
+  const data = areasData[locality as keyof typeof areasData];
   
   if (!data) {
     notFound();
@@ -176,7 +178,7 @@ export default function LocalityPage({ params }: { params: { locality: string } 
         "@type": "ListItem",
         "position": 3,
         "name": data.name,
-        "item": `https://www.priyankaenterpriseshyderabad.com/areas/${params.locality}`
+        "item": `https://www.priyankaenterpriseshyderabad.com/areas/${locality}`
       }
     ]
   };
