@@ -197,14 +197,15 @@ export default function RootLayout({
       <body className="min-h-full bg-slate-50 text-slate-900 flex flex-col font-sans pb-[60px] md:pb-0 overflow-x-hidden">
         {/* Google tag (gtag.js) */}
         <Script 
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18291286869" 
-          strategy="lazyOnload" 
+          src="https://www.googletagmanager.com/gtag/js?id=G-WFKSLS9GSE" 
+          strategy="afterInteractive" 
         />
-        <Script id="google-analytics" strategy="lazyOnload">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            gtag('config', 'G-WFKSLS9GSE');
             gtag('config', 'AW-18291286869');
           `}
         </Script>
