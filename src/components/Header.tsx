@@ -144,12 +144,12 @@ export default function Header() {
           </div>
           <div className="flex items-center space-x-4">
             <a 
-              href="mailto:mrjoe4425@gmail.com" 
+              href="mailto:Enterprisespriyanka564@gmail.com" 
               className="hover:text-white transition-colors hidden sm:flex items-center gap-1 text-slate-300"
               aria-label="Email Us"
             >
               <Mail className="w-3.5 h-3.5 text-accent" />
-              <span>mrjoe4425@gmail.com</span>
+              <span>Enterprisespriyanka564@gmail.com</span>
             </a>
             <span className="hidden sm:inline text-slate-500">|</span>
             <span className="flex items-center gap-1.5 text-emerald-400 font-semibold">

@@ -90,7 +90,7 @@ export default function RootLayout({
     "@id": "https://www.priyankaenterpriseshyderabad.com/#localbusiness",
     "url": "https://www.priyankaenterpriseshyderabad.com",
     "telephone": "+918121488961",
-    "email": "mrjoe4425@gmail.com",
+    "email": "Enterprisespriyanka564@gmail.com",
     "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
