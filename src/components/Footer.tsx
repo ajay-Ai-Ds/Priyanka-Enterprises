@@ -6,6 +6,10 @@ import Logo from "./Logo";
 export default function Footer() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    if (typeof window !== "undefined" && window.location.pathname !== "/") {
+      window.location.href = `/${href}`;
+      return;
+    }
     const target = document.querySelector(href);
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
@@ -57,6 +61,14 @@ export default function Footer() {
                   className="hover:text-primary-light hover:underline transition-colors"
                 >
                   Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog"
+                  className="hover:text-primary-light hover:underline transition-colors text-amber-400 font-semibold"
+                >
+                  Blog & Articles
                 </a>
               </li>
               <li>

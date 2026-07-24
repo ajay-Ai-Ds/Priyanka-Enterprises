@@ -10,6 +10,7 @@ const navItems = [
   { name: "Safety Nets", href: "#services" },
   { name: "Invisible Grills", href: "#invisible-grills" },
   { name: "Cloth Hangers", href: "#cloth-hangers" },
+  { name: "Blog", href: "/blog" },
   { name: "Why Us", href: "#why-choose-us" },
   { name: "Gallery", href: "#gallery" },
   { name: "Reviews", href: "#reviews" },
@@ -85,7 +86,18 @@ export default function Header() {
   }, []);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("/")) {
+      // Direct URL navigation like /blog
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
     e.preventDefault();
+    if (typeof window !== "undefined" && window.location.pathname !== "/") {
+      window.location.href = `/${href}`;
+      return;
+    }
+
     let targetId = href;
     if (href === "#invisible-grills" || href === "#cloth-hangers") {
       targetId = "#services";

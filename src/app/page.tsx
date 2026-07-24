@@ -7,6 +7,7 @@ import Gallery from "@/components/Gallery";
 import Process from "@/components/Process";
 import Reviews from "@/components/Reviews";
 import FAQ from "@/components/FAQ";
+import BlogSection from "@/components/BlogSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingCTAs from "@/components/FloatingCTAs";
@@ -25,6 +26,7 @@ export default function Home() {
         <Process />
         <Reviews />
         <FAQ />
+        <BlogSection />
         <Contact />
       </main>
       <Footer />
