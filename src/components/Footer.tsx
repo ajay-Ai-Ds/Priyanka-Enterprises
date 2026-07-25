@@ -37,7 +37,7 @@ export default function Footer() {
                 <Phone className="w-5 h-5 fill-white" />
               </a>
               <a
-                href="https://wa.me/918121488961?text=Hi%20Priyanka%20Enterprises%2C%20I%20need%20more%20information%20about%20your%20services."
+                href={`https://wa.me/918121488961?text=${encodeURIComponent("Hello Priyanka Enterprises, I’m looking to secure my balcony with safety nets. Could you please schedule a free site inspection at your earliest convenience? Let me know the available slots.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 hover:bg-accent hover:text-slate-900 text-slate-900 transition-colors duration-200"

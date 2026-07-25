@@ -221,7 +221,7 @@ export default async function LocalityPage({ params }: { params: Promise<{ local
               <a href="tel:+918121488961" className="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded-xl transition-colors w-full sm:w-auto">
                 Call +91 81214 88961
               </a>
-              <a href="https://wa.me/918121488961" className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-8 rounded-xl transition-colors w-full sm:w-auto">
+              <a href={`https://wa.me/918121488961?text=${encodeURIComponent("Hello Priyanka Enterprises, I’m looking to secure my balcony with safety nets. Could you please schedule a free site inspection at your earliest convenience? Let me know the available slots.")}`} target="_blank" rel="noopener noreferrer" className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-8 rounded-xl transition-colors w-full sm:w-auto">
                 WhatsApp Us
               </a>
             </div>

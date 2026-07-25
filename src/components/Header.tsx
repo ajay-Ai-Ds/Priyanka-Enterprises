@@ -228,7 +228,7 @@ export default function Header() {
               </a>
 
               <a
-                href="https://wa.me/918121488961?text=Hi%20Priyanka%20Enterprises%2C%20I%20am%20interested%20in%20a%20free%20inspection%20and%20quote%20for%20your%20services."
+                href={`https://wa.me/918121488961?text=${encodeURIComponent("Hello Priyanka Enterprises, I’m looking to secure my balcony with safety nets. Could you please schedule a free site inspection at your earliest convenience? Let me know the available slots.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center space-x-1.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-2.5 py-2 xl:px-3.5 xl:py-2.5 rounded-xl text-xs xl:text-sm font-bold hover:shadow-md hover:shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-0.5 border border-white/10 whitespace-nowrap"
@@ -318,7 +318,7 @@ export default function Header() {
                   <span>Call Now</span>
                 </a>
                 <a
-                  href="https://wa.me/918121488961?text=Hi%20Priyanka%20Enterprises%2C%20I%20am%20interested%20in%20a%20free%20inspection%20and%20quote%20for%20your%20services."
+                  href={`https://wa.me/918121488961?text=${encodeURIComponent("Hello Priyanka Enterprises, I’m looking to secure my balcony with safety nets. Could you please schedule a free site inspection at your earliest convenience? Let me know the available slots.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-3.5 rounded-xl text-sm font-bold shadow-md hover:opacity-90 transition-all active:scale-98"

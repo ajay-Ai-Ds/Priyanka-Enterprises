@@ -126,7 +126,7 @@ export default async function BlogPostPage({ params }: Props) {
               <a href="tel:+918121488961" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md">
                 Call Now
               </a>
-              <a href="https://wa.me/918121488961" target="_blank" rel="noopener noreferrer" className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md">
+              <a href={`https://wa.me/918121488961?text=${encodeURIComponent("Hello Priyanka Enterprises, I’m looking to secure my balcony with safety nets. Could you please schedule a free site inspection at your earliest convenience? Let me know the available slots.")}`} target="_blank" rel="noopener noreferrer" className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md">
                 WhatsApp
               </a>
             </div>

@@ -163,7 +163,9 @@ export default function Hero() {
     }, 4000);
   };
 
-  const whatsappUrl = "https://wa.me/918121488961?text=Hi%20Priyanka%20Enterprises%2C%20I%20want%20to%20book%20a%20free%20inspection%20and%20quote.";
+  const whatsappUrl = `https://wa.me/918121488961?text=${encodeURIComponent(
+    "Hello Priyanka Enterprises, I’m looking to secure my balcony with safety nets. Could you please schedule a free site inspection at your earliest convenience? Let me know the available slots."
+  )}`;
 
   return (
     <>
