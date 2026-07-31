@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Phone, ArrowUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { trackGoogleConversion } from "@/utils/conversion";
 
 export default function FloatingCTAs() {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,6 +40,7 @@ export default function FloatingCTAs() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackGoogleConversion()}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
@@ -57,6 +59,7 @@ export default function FloatingCTAs() {
         {/* Call Floating */}
         <motion.a
           href="tel:+918121488961"
+          onClick={() => trackGoogleConversion()}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
@@ -92,6 +95,7 @@ export default function FloatingCTAs() {
       <div className="sm:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 shadow-[0_-4px_12px_rgba(0,0,0,0.08)] grid grid-cols-2 p-3 gap-3 z-50">
         <a
           href="tel:+918121488961"
+          onClick={() => trackGoogleConversion()}
           className="flex items-center justify-center space-x-2 bg-[#f97316] text-slate-900 py-3.5 px-4 rounded-xl text-base font-bold active:scale-95 transition-transform min-h-[48px]"
         >
           <Phone className="w-5 h-5 fill-white" />
@@ -101,6 +105,7 @@ export default function FloatingCTAs() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackGoogleConversion()}
           className="flex items-center justify-center space-x-2 bg-accent text-slate-900 py-3.5 px-4 rounded-xl text-base font-bold active:scale-95 transition-transform min-h-[48px]"
         >
           <svg className="w-5 h-5 fill-slate-900" viewBox="0 0 24 24">

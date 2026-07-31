@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Phone, Menu, X, Mail, MapPin, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "./Logo";
+import { trackGoogleConversion } from "@/utils/conversion";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -129,7 +130,8 @@ export default function Header() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <a 
-              href="tel:+918121488961" 
+              href="tel:+918121488961"
+              onClick={() => trackGoogleConversion()}
               className="flex items-center gap-1.5 font-extrabold text-accent hover:text-white transition-colors tracking-wide"
               aria-label="Call +91 81214 88961"
             >
@@ -220,6 +222,7 @@ export default function Header() {
             <div className="hidden sm:flex items-center space-x-1.5 xl:space-x-2.5">
               <a
                 href="tel:+918121488961"
+                onClick={() => trackGoogleConversion()}
                 className="group flex items-center space-x-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-2.5 py-2 xl:px-3.5 xl:py-2.5 rounded-xl text-xs xl:text-sm font-bold hover:shadow-md hover:shadow-orange-500/20 transition-all duration-300 hover:-translate-y-0.5 border border-white/10 whitespace-nowrap"
               >
                 <Phone className="w-3.5 h-3.5 fill-white group-hover:animate-bounce" />
@@ -231,6 +234,7 @@ export default function Header() {
                 href={`https://wa.me/918121488961?text=${encodeURIComponent("Hello Priyanka Enterprises, I’m looking to secure my balcony with safety nets. Could you please schedule a free site inspection at your earliest convenience? Let me know the available slots.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackGoogleConversion()}
                 className="group flex items-center space-x-1.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-2.5 py-2 xl:px-3.5 xl:py-2.5 rounded-xl text-xs xl:text-sm font-bold hover:shadow-md hover:shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-0.5 border border-white/10 whitespace-nowrap"
               >
                 <div className="relative flex h-2 w-2 mr-0.5">
@@ -250,6 +254,7 @@ export default function Header() {
             <div className="lg:hidden flex items-center space-x-2">
               <a
                 href="tel:+918121488961"
+                onClick={() => trackGoogleConversion()}
                 className="w-11 h-11 flex items-center justify-center rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:opacity-95 shadow-md transition-all active:scale-95"
                 aria-label="Call Customer Care"
               >

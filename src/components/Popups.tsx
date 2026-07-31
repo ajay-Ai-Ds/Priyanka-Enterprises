@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { X, CheckCircle, Send, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { handleLeadSubmission, trackGoogleConversion } from "@/utils/conversion";
 
 export default function Popups() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,12 +69,13 @@ export default function Popups() {
       return;
     }
     
-    // Trigger Google Ads Conversion
-    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
-      (window as any).gtag_report_conversion();
-    }
-    
-    // Simulate API submission
+    const whatsappUrl = handleLeadSubmission({
+      name,
+      phone,
+      service,
+      message,
+    });
+
     setIsSubmitted(true);
     localStorage.setItem("priyanka_popup_dismissed", "true");
     
@@ -82,11 +84,15 @@ export default function Popups() {
     setPhone("");
     setMessage("");
 
-    // Close success popup after 3 seconds
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+    }, 300);
+
+    // Close success popup after 4 seconds
     setTimeout(() => {
       setIsOpen(false);
       setIsSubmitted(false);
-    }, 3000);
+    }, 4000);
   };
 
   return (

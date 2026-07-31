@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Phone, Star, CheckCircle, Shield, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { handleLeadSubmission, trackGoogleConversion } from "@/utils/conversion";
 
 const slides = [
   {
@@ -148,19 +149,28 @@ export default function Hero() {
       return;
     }
     
-    // Trigger Google Ads Conversion
-    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
-      (window as any).gtag_report_conversion();
-    }
-    
+    const whatsappUrl = handleLeadSubmission({
+      name,
+      phone,
+      service,
+      location,
+      message,
+    });
+
     setIsSubmitted(true);
     setName("");
     setPhone("");
     setLocation("");
     setMessage("");
+
+    // Open WhatsApp with formatted lead message
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+    }, 300);
+
     setTimeout(() => {
       setIsSubmitted(false);
-    }, 4000);
+    }, 6000);
   };
 
   const whatsappUrl = `https://wa.me/918121488961?text=${encodeURIComponent(

@@ -35,6 +35,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: 'https://www.priyankaenterpriseshyderabad.com/invisible-grills',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: 'https://www.priyankaenterpriseshyderabad.com/cloth-hangers',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: 'https://www.priyankaenterpriseshyderabad.com/balcony-safety-nets',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
       url: 'https://www.priyankaenterpriseshyderabad.com/areas',
       lastModified: new Date(),
       changeFrequency: 'monthly',

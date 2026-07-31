@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Phone, MessageCircle, MapPin, Mail, Clock, Send, CheckCircle } from "lucide-react";
+import { handleLeadSubmission, trackGoogleConversion } from "@/utils/conversion";
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -32,18 +33,25 @@ export default function Contact() {
       return;
     }
     
-    // Trigger Google Ads Conversion
-    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
-      (window as any).gtag_report_conversion();
-    }
+    const whatsappUrl = handleLeadSubmission({
+      name,
+      phone,
+      service,
+      message,
+    });
     
     setIsSubmitted(true);
     setName("");
     setPhone("");
     setMessage("");
+
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+    }, 300);
+
     setTimeout(() => {
       setIsSubmitted(false);
-    }, 4000);
+    }, 6000);
   };
 
   const whatsappUrl = `https://wa.me/918121488961?text=${encodeURIComponent(
@@ -89,6 +97,7 @@ export default function Contact() {
             <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3 justify-center">
               <a
                 href="tel:+918121488961"
+                onClick={() => trackGoogleConversion()}
                 className="flex items-center justify-center space-x-2 bg-white text-primary hover:bg-slate-100 py-4 px-6 rounded-xl font-extrabold text-base shadow-md transition-all active:scale-98"
               >
                 <Phone className="w-5 h-5 fill-primary" />
@@ -98,6 +107,7 @@ export default function Contact() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackGoogleConversion()}
                 className="flex items-center justify-center space-x-2 bg-accent hover:bg-accent-dark text-slate-900 py-4 px-6 rounded-xl font-extrabold text-base shadow-md transition-all active:scale-98"
               >
                 <MessageCircle className="w-5 h-5 fill-slate-900" />

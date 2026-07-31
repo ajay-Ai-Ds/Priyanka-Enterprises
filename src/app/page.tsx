@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Trust from "@/components/Trust";
 import Services from "@/components/Services";
+import PriceCalculator from "@/components/PriceCalculator";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Process from "@/components/Process";
 import Contact from "@/components/Contact";
@@ -24,6 +25,7 @@ export default function Home() {
         <Hero />
         <Trust />
         <Services />
+        <PriceCalculator />
         <WhyChooseUs />
         <Gallery />
         <Process />
