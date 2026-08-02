@@ -56,11 +56,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#home"
-                  onClick={(e) => handleNavClick(e, "#home")}
-                  className="hover:text-primary-light hover:underline transition-colors"
+                  href="/about-us"
+                  className="hover:text-primary-light hover:underline transition-colors font-medium text-slate-200"
                 >
-                  Home
+                  About Us & Operations
                 </a>
               </li>
               <li>
@@ -157,7 +156,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 text-primary-light shrink-0 mt-0.5" />
-                <span>Lingampally, Amneepur Road, near Sri Sai Baba Temple, Hyderabad, Telangana - 502032</span>
+                <span>Lingampally, Ameenpur Road, near Sri Sai Baba Temple, Hyderabad, Telangana - 502032</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-primary-light shrink-0" />
@@ -187,8 +186,9 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400">
           <p>© {new Date().getFullYear()} Priyanka Enterprises Hyderabad. All Rights Reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
+            <a href="/about-us" className="hover:text-slate-350 hover:underline">About Us</a>
             <a href="/privacy-policy" className="hover:text-slate-350 hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:text-slate-350 hover:underline">Terms & Conditions</a>
+            <a href="/terms-and-conditions" className="hover:text-slate-350 hover:underline">Terms & Conditions</a>
             <a href="#faq" onClick={(e) => handleNavClick(e, "#faq")} className="hover:text-slate-350 hover:underline">FAQ</a>
           </div>
         </div>
