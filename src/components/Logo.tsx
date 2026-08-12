@@ -35,7 +35,7 @@ export default function Logo({
         style={{ width: iconSize, height: iconSize }}
       >
         <Image
-          src="/images/priyankalogo.jpg"
+          src="/images/priyankalogo.webp"
           alt="Priyanka Enterprises Logo Icon"
           fill
           className="object-contain rounded-lg"

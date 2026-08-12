@@ -26,7 +26,7 @@ const slides = [
     tagline: "High-Tensile Stainless Steel"
   },
   {
-    image: "/images/clientwork (1).jpg",
+    image: "/images/clientwork (1).webp",
     title: "Heavy-Duty Balcony Child Safety Nets",
     titlePrefix: "Heavy-Duty Balcony ",
     titleHighlight: "Child Safety Nets",
@@ -35,7 +35,7 @@ const slides = [
     tagline: "100% Child Proof"
   },
   {
-    image: "/images/clientwork (2).jpg",
+    image: "/images/clientwork (2).webp",
     title: "Professional Cricket & Sports Practice Nets",
     titlePrefix: "Professional ",
     titleHighlight: "Cricket & Sports Practice Nets",
@@ -44,7 +44,7 @@ const slides = [
     tagline: "UV-Stabilized Nets"
   },
   {
-    image: "/images/clientwork (4).jpg",
+    image: "/images/clientwork (4).webp",
     title: "Robust Wire-Reinforced Monkey Safety Nets",
     titlePrefix: "Robust Wire-Reinforced ",
     titleHighlight: "Monkey Safety Nets",
@@ -53,7 +53,7 @@ const slides = [
     tagline: "Bite-Resistant & Sturdy"
   },
   {
-    image: "/images/clientwork (9).jpg",
+    image: "/images/clientwork (9).webp",
     title: "Building Duct & Open Shaft Bird Protection",
     titlePrefix: "Building Duct & Open Shaft ",
     titleHighlight: "Bird Protection Nets",
@@ -62,7 +62,7 @@ const slides = [
     tagline: "Industrial-Grade Quality"
   },
   {
-    image: "/images/clothhanger.jpg",
+    image: "/images/clothhanger.webp",
     title: "Ceiling-Mounted Space-Saving Cloth Hangers",
     titlePrefix: "Ceiling-Mounted Space-Saving ",
     titleHighlight: "Cloth Hangers",
@@ -200,6 +200,17 @@ export default function Hero() {
 
       {/* Background Image Carousel (Smooth continuous Ken Burns and crossfade) */}
       <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Base image rendered immediately for instant LCP */}
+        <Image
+          src="/images/pigeonsafetynet.webp"
+          alt="Priyanka Enterprises Safety Nets Hyderabad"
+          fill
+          priority
+          fetchPriority="high"
+          quality={80}
+          className="w-full h-full object-cover object-center"
+          sizes="100vw"
+        />
         <AnimatePresence initial={false}>
           <motion.div
             key={currentSlide}
@@ -217,10 +228,10 @@ export default function Hero() {
               alt={slides[currentSlide].title}
               fill
               priority={currentSlide === 0}
-              quality={85}
+              quality={80}
               className="w-full h-full object-cover object-center"
               style={{ filter: "saturate(1.05) brightness(0.92) contrast(1.02)" }}
-              sizes="(max-width: 768px) 100vw, 100vw"
+              sizes="100vw"
             />
           </motion.div>
         </AnimatePresence>

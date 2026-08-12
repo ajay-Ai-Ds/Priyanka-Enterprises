@@ -42,7 +42,7 @@ export default function ClothHangersClient() {
       <section className="relative bg-slate-900 text-white py-16 lg:py-24 overflow-hidden border-b border-slate-800">
         <div className="absolute inset-0 z-0 opacity-40">
           <Image
-            src="/images/clothhanger.jpg"
+            src="/images/clothhanger.webp"
             alt="Ceiling Cloth Hangers Hyderabad"
             fill
             className="object-cover object-center"

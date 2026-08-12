@@ -1,19 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const outfit = Outfit({
-  variable: "--font-display",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Priyanka Enterprises Hyderabad | Premium Balcony Safety Nets & Invisible Grills",
@@ -102,8 +90,8 @@ export default function RootLayout({
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 17.4834,
-      "longitude": 78.3188
+      "latitude": 17.5224429,
+      "longitude": 78.3218876
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -179,7 +167,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${outfit.variable} scroll-smooth h-full antialiased`}
+      className="scroll-smooth h-full antialiased"
     >
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -198,9 +186,9 @@ export default function RootLayout({
         {/* Google tag (gtag.js) */}
         <Script 
           src="https://www.googletagmanager.com/gtag/js?id=G-WFKSLS9GSE" 
-          strategy="afterInteractive" 
+          strategy="lazyOnload" 
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

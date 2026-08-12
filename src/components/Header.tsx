@@ -174,6 +174,7 @@ export default function Header() {
             <a
               href="#home"
               className="flex items-center group cursor-pointer"
+              aria-label="Priyanka Enterprises Home"
               onClick={(e) => handleNavClick(e, "#home")}
             >
               <Logo

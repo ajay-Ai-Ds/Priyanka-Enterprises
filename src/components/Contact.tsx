@@ -132,7 +132,14 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
                   <div>
                     <span className="font-bold text-slate-800 block">Our Address</span>
-                    <span>Lingampally, Amneepur Road, near Sri Sai Baba Temple, Hyderabad, Telangana - 502032</span>
+                    <a
+                      href="https://www.google.com/maps?q=17.5224429,78.3218876&z=17&hl=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors hover:underline"
+                    >
+                      Lingampally, Ameenpur Road, near Sri Sai Baba Temple, Hyderabad, Telangana - 502032
+                    </a>
                   </div>
                 </div>
 
@@ -157,10 +164,10 @@ export default function Contact() {
             </div>
 
             {/* Map Iframe */}
-            <div className="relative w-full h-[280px] bg-slate-100 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+            <div className="relative w-full h-[280px] bg-slate-100 rounded-2xl overflow-hidden shadow-sm border border-slate-200 group">
               <iframe
                 title="Priyanka Enterprises Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15222.181313783856!2d78.3072233!3d17.4815414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb92f4da066063%3A0xc6c4f0340b07fc0f!2sLingampally%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1719598200000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=17.5224429,78.3218876&z=17&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -168,6 +175,15 @@ export default function Contact() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
+              <a
+                href="https://www.google.com/maps?q=17.5224429,78.3218876&z=17&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-3 right-3 bg-white/95 hover:bg-white text-slate-800 text-xs font-bold px-3 py-1.5 rounded-lg shadow-md border border-slate-200 flex items-center space-x-1.5 transition-all hover:scale-105"
+              >
+                <MapPin className="w-3.5 h-3.5 text-primary" />
+                <span>Open in Google Maps</span>
+              </a>
             </div>
           </div>
 

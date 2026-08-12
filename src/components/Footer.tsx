@@ -156,7 +156,14 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 text-primary-light shrink-0 mt-0.5" />
-                <span>Lingampally, Ameenpur Road, near Sri Sai Baba Temple, Hyderabad, Telangana - 502032</span>
+                <a
+                  href="https://www.google.com/maps?q=17.5224429,78.3218876&z=17&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors hover:underline"
+                >
+                  Lingampally, Ameenpur Road, near Sri Sai Baba Temple, Hyderabad, Telangana - 502032
+                </a>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-primary-light shrink-0" />

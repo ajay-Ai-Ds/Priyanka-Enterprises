@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
       name: "Priyanka Enterprises",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.priyankaenterpriseshyderabad.com/images/logo_dark.png"
+        url: "https://www.priyankaenterpriseshyderabad.com/images/logo_dark.webp"
       }
     },
     description: post.description

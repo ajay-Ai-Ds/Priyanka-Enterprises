@@ -30,7 +30,7 @@ const servicesData = {
       {
         id: "monkey-nets",
         name: "Monkey Safety Nets",
-        img: "/images/monkey.jpeg",
+        img: "/images/monkey.webp",
         tags: ["Thick Nylon", "Impact Proof", "Heavy Duty"],
         bulletPoints: ["Extra-thick grid mesh", "High impact resistance", "Secured with heavy wall anchors", "Blocks aggressive monkey intrusions"],
         description: "Designed specifically to withstand aggressive monkey intrusions. These nets are woven with extra-thick braided nylon twine and reinforced with heavy-duty anchors. Ideal for ground floor houses, high-rise buildings near forest areas, and terraces."
@@ -38,7 +38,7 @@ const servicesData = {
       {
         id: "sports-nets",
         name: "Cricket & Sports Netting",
-        img: "/images/cricket.jpeg",
+        img: "/images/cricket.webp",
         tags: ["Heavy Ply", "Custom Sizes", "Indoor/Outdoor"],
         bulletPoints: ["Cricket practice pitches", "Football & soccer court netting", "Highly durable HDPE twines", "Custom layout designs"],
         description: "Professional sports court netting for schools, clubs, residential societies, and terraces. Built with thick braided, multi-ply HDPE yarn to absorb high-impact shots. Custom designs for cricket nets, football nets, and basketball boundaries."
@@ -70,7 +70,7 @@ const servicesData = {
       {
         id: "bird-spikes",
         name: "Anti-Bird & Pigeon Spikes",
-        img: "/images/service-spikes.png",
+        img: "/images/service-spikes.webp",
         tags: ["Polycarbonate Base", "SS Spikes", "Weather Proof"],
         bulletPoints: ["Prevent birds from landing", "100% humane (no harm to birds)", "Installs on railings & AC units", "Highly durable and transparent"],
         description: "Perfect for narrow ledges, pipes, window sills, and air conditioner outdoor units where safety nets cannot be easily anchored. Our premium stainless steel spikes on polycarbonate bases discourage birds from landing or nesting without causing them harm."
@@ -106,7 +106,7 @@ const servicesData = {
       {
         id: "pulley-hangers",
         name: "Ceiling Pulley Cloth Hangers",
-        img: "/images/clothhanger.jpg",
+        img: "/images/clothhanger.webp",
         tags: ["Rust Proof", "Independently Movable", "Space Saver"],
         bulletPoints: ["Independently lowered rods", "Rust-free aluminum pipes", "High-tensile nylon pulleys", "Zero floor-space occupancy"],
         description: "Save space with our premium ceiling-mounted cloth hangers. Lower and raise individual rods easily using smooth nylon pulleys and durable metal brackets. Keeps clothes dry near the ceiling and frees up floor space on your balcony."
@@ -114,7 +114,7 @@ const servicesData = {
       {
         id: "motorized-hangers",
         name: "Motorized Cloth Drying Systems",
-        img: "/images/service-hanger-motor.jpg",
+        img: "/images/service-hanger-motor.webp",
         tags: ["Remote Control", "UV Air Dryers", "Premium Luxury"],
         bulletPoints: ["Wireless remote control operation", "Integrated warm air blower & UV", "Built-in LED lighting", "Saves time and manual labor"],
         description: "Experience luxury and convenience with remote-controlled ceiling hangers. Features built-in warm air blowers and UV sanitizing lamps to speed up drying during rainy Hyderabad monsoons. Heavy load-bearing capacity with obstacle detection."

@@ -14,7 +14,7 @@ export const blogData: BlogPost[] = [
     title: "Balcony Safety Nets Installation in Hyderabad: Protection, Materials & Completed Projects",
     description: "Learn how balcony safety nets work, why high-density HDPE nets protect your family from accidental falls, key installation techniques, and recent completed projects across Hyderabad localities.",
     date: "2026-07-22",
-    image: "/images/balconysafetynet-blog.jpg",
+    image: "/images/balconysafetynet-blog.webp",
     relatedSlugs: [
       "children-safety-nets-for-flats-hyderabad",
       "invisible-grills-vs-balcony-safety-nets-hyderabad",
@@ -87,7 +87,7 @@ export const blogData: BlogPost[] = [
     title: "Child Safety Nets for High-Rise Apartments in Hyderabad: How They Work & Real Locations Secured",
     description: "Discover how child safety nets safeguard your toddlers and kids in high-rise balconies and windows. Includes material specs, installation standards, and completed case studies in Hyderabad.",
     date: "2026-07-20",
-    image: "/images/childrensafetynet-blog.jpg",
+    image: "/images/childrensafetynet-blog.webp",
     relatedSlugs: [
       "balcony-safety-nets-installation-guide-hyderabad",
       "best-child-safety-nets-for-high-rise-apartments-in-hyderabad",
@@ -155,7 +155,7 @@ export const blogData: BlogPost[] = [
     title: "Ceiling Pulley Cloth Drying Hangers in Hyderabad: How They Work, Benefits & Completed Installations",
     description: "Transform your utility area with ceiling-mounted pulley cloth drying hangers. Learn how the pulley mechanism works, heavy load capacity, rust resistance, and completed project locations in Hyderabad.",
     date: "2026-07-18",
-    image: "/images/clothhangersblog.jpg",
+    image: "/images/clothhangersblog.webp",
     relatedSlugs: [
       "balcony-safety-nets-installation-guide-hyderabad",
       "cost-of-invisible-grills-per-sq-ft-in-hyderabad",
@@ -222,7 +222,7 @@ export const blogData: BlogPost[] = [
     title: "Modern Invisible Grills for Hyderabad Apartments: Technology, Security & Completed Projects",
     description: "Explore SS 316 marine-grade invisible grills for high-rise balconies and windows in Hyderabad. Discover cable durability, security features, fire safety compliance, and recent project locations.",
     date: "2026-07-15",
-    image: "/images/invisiblegrillsblog.jpg",
+    image: "/images/invisiblegrillsblog.webp",
     relatedSlugs: [
       "invisible-grills-vs-balcony-safety-nets-hyderabad",
       "cost-of-invisible-grills-per-sq-ft-in-hyderabad",
@@ -401,7 +401,7 @@ export const blogData: BlogPost[] = [
     title: "Monkey Menace in Hyderabad: How to Secure Your Home with Heavy-Duty Nets",
     description: "Monkeys causing havoc on your terrace or balcony? Learn how specialized heavy-duty monkey safety nets can secure your property without blocking airflow.",
     date: "2024-04-28",
-    image: "/images/monkey.jpeg",
+    image: "/images/monkey.webp",
     relatedSlugs: [
       "how-to-keep-pigeons-away-from-balcony-in-hyderabad",
       "sports-practice-cricket-nets-for-terraces-in-hyderabad",
@@ -427,7 +427,7 @@ export const blogData: BlogPost[] = [
     title: "Setting up Terrace Cricket Practice Nets in Hyderabad: What You Need to Know",
     description: "Transform your empty terrace into a safe sports arena. Everything you need to know about custom cricket practice net installations in residential spaces.",
     date: "2024-05-10",
-    image: "/images/cricket.jpeg",
+    image: "/images/cricket.webp",
     relatedSlugs: [
       "monkey-menace-in-hyderabad-how-to-secure-your-home",
       "best-child-safety-nets-for-high-rise-apartments-in-hyderabad",

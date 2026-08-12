@@ -12,73 +12,73 @@ const galleryItems = [
     id: 1,
     title: "Balcony Protection Net",
     category: "Balcony",
-    image: "/images/clientwork (1).jpg"
+    image: "/images/clientwork (1).webp"
   },
   {
     id: 2,
     title: "Invisible Grill Installation",
     category: "Invisible Grill",
-    image: "/images/clientwork (2).jpg"
+    image: "/images/clientwork (2).webp"
   },
   {
     id: 3,
     title: "Apartment Safety Net",
     category: "Apartment",
-    image: "/images/clientwork (3).jpg"
+    image: "/images/clientwork (3).webp"
   },
   {
     id: 4,
     title: "Heavy Duty Monkey Net",
     category: "Monkey Net",
-    image: "/images/clientwork (4).jpg"
+    image: "/images/clientwork (4).webp"
   },
   {
     id: 5,
     title: "Cricket Practice Net",
     category: "Sports Net",
-    image: "/images/clientwork (5).jpg"
+    image: "/images/clientwork (5).webp"
   },
   {
     id: 6,
     title: "Anti-Bird Netting",
     category: "Bird Net",
-    image: "/images/clientwork (6).jpg"
+    image: "/images/clientwork (6).webp"
   },
   {
     id: 7,
     title: "Residential Balcony Net",
     category: "Balcony",
-    image: "/images/clientwork (7).jpg"
+    image: "/images/clientwork (7).webp"
   },
   {
     id: 8,
     title: "High-Rise Invisible Grill",
     category: "Invisible Grill",
-    image: "/images/clientwork (8).jpg"
+    image: "/images/clientwork (8).webp"
   },
   {
     id: 9,
     title: "Duct Area Safety Net",
     category: "Apartment",
-    image: "/images/clientwork (9).jpg"
+    image: "/images/clientwork (9).webp"
   },
   {
     id: 10,
     title: "Monkey Protection Mesh",
     category: "Monkey Net",
-    image: "/images/clientwork (10).jpg"
+    image: "/images/clientwork (10).webp"
   },
   {
     id: 11,
     title: "Sports Arena Netting",
     category: "Sports Net",
-    image: "/images/clientwork (11).jpg"
+    image: "/images/clientwork (11).webp"
   },
   {
     id: 12,
     title: "Pigeon Control Net",
     category: "Bird Net",
-    image: "/images/clientwork (12).jpg"
+    image: "/images/clientwork (12).webp"
   }
 ];
 
