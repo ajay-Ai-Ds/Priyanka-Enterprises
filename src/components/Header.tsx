@@ -224,11 +224,12 @@ export default function Header() {
               <a
                 href="tel:+918121488961"
                 onClick={() => trackGoogleConversion()}
-                className="group flex items-center space-x-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-2.5 py-2 xl:px-3.5 xl:py-2.5 rounded-xl text-xs xl:text-sm font-bold hover:shadow-md hover:shadow-orange-500/20 transition-all duration-300 hover:-translate-y-0.5 border border-white/10 whitespace-nowrap"
+                className="group flex items-center space-x-2 bg-gradient-to-r from-orange-500 via-orange-600 to-amber-600 text-white px-3 py-2 xl:px-4 xl:py-2.5 rounded-xl text-xs xl:text-sm font-extrabold shadow-md hover:shadow-orange-500/30 transition-all duration-300 hover:-translate-y-0.5 border border-white/20 whitespace-nowrap"
               >
-                <Phone className="w-3.5 h-3.5 fill-white group-hover:animate-bounce" />
-                <span className="hidden xl:inline">+91 81214 88961</span>
-                <span className="inline xl:hidden">Call</span>
+                <div className="bg-white/20 p-1 rounded-lg">
+                  <Phone className="w-3.5 h-3.5 fill-white group-hover:animate-bounce" />
+                </div>
+                <span className="font-mono tracking-tight font-extrabold text-amber-100">+91 81214 88961</span>
               </a>
 
               <a
@@ -256,10 +257,11 @@ export default function Header() {
               <a
                 href="tel:+918121488961"
                 onClick={() => trackGoogleConversion()}
-                className="w-11 h-11 flex items-center justify-center rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:opacity-95 shadow-md transition-all active:scale-95"
-                aria-label="Call Customer Care"
+                className="flex items-center space-x-1.5 px-3 py-2 rounded-xl bg-gradient-to-r from-orange-500 to-amber-600 text-white font-extrabold text-xs shadow-md transition-all active:scale-95 border border-white/20"
+                aria-label="Call +91 81214 88961"
               >
-                <Phone className="w-5 h-5 fill-white" />
+                <Phone className="w-4 h-4 fill-white animate-pulse" />
+                <span className="font-mono text-[11px] sm:text-xs tracking-tight">+91 81214 88961</span>
               </a>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

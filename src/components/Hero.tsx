@@ -8,67 +8,74 @@ import { handleLeadSubmission, trackGoogleConversion } from "@/utils/conversion"
 
 const slides = [
   {
-    image: "/images/pigeonsafetynet.webp",
-    title: "Hyderabad's #1 Pigeon Safety Nets",
-    titlePrefix: "Hyderabad's #1 ",
-    titleHighlight: "Pigeon Safety Nets",
-    titleSuffix: "",
-    subtitle: "Keep your balcony clean, hygienic, and pigeon-free with heavy-duty UV-resistant netting.",
-    tagline: "Same Day Installation"
-  },
-  {
-    image: "/images/balconygrill.webp",
-    title: "Premium Invisible Grills for Modern Apartments",
-    titlePrefix: "Premium ",
+    image: "/images/carousel_invisible_grill.webp",
+    title: "SS 316 Invisible Grills for Hyderabad Apartments",
+    titlePrefix: "Marine Grade SS 316 ",
     titleHighlight: "Invisible Grills",
     titleSuffix: " for Modern Apartments",
-    subtitle: "Enjoy unobstructed scenic views of the city skyline with zero compromise on safety.",
-    tagline: "High-Tensile Stainless Steel"
+    subtitle: "Protect your children & pets with 400kg tensile strength while enjoying 100% unobstructed panoramic balcony views.",
+    tagline: "Starts @ ₹140/sq ft • 5-Yr Warranty",
+    badge: "Most Popular in Hyderabad"
   },
   {
-    image: "/images/clientwork (1).webp",
+    image: "/images/carousel_pigeon_net.webp",
+    title: "Hyderabad's #1 Pigeon & Bird Safety Nets",
+    titlePrefix: "Hyderabad's #1 ",
+    titleHighlight: "Pigeon Safety Nets",
+    titleSuffix: " Installation",
+    subtitle: "Keep your balcony 100% clean, hygienic, and bird-free with heavy-duty UV-stabilized translucent netting.",
+    tagline: "Starting @ ₹15/sq ft • Same Day Service",
+    badge: "Instant 2-Hour Technician Visit"
+  },
+  {
+    image: "/images/carousel_child_safety.webp",
     title: "Heavy-Duty Balcony Child Safety Nets",
     titlePrefix: "Heavy-Duty Balcony ",
     titleHighlight: "Child Safety Nets",
-    titleSuffix: "",
-    subtitle: "Specifically engineered white safety netting to secure open balconies and keep children safe.",
-    tagline: "100% Child Proof"
+    titleSuffix: " for High-Rises",
+    subtitle: "Specifically engineered high-strength white safety netting to secure open balconies and keep children 100% safe.",
+    tagline: "100% Child Proof • High-Rise Certified",
+    badge: "Rated #1 Child Safety Net"
   },
   {
-    image: "/images/clientwork (2).webp",
-    title: "Professional Cricket & Sports Practice Nets",
-    titlePrefix: "Professional ",
-    titleHighlight: "Cricket & Sports Practice Nets",
-    titleSuffix: "",
-    subtitle: "Custom-sized heavy-duty outdoor netting systems perfect for terrace cricket pitches and backyards.",
-    tagline: "UV-Stabilized Nets"
-  },
-  {
-    image: "/images/clientwork (4).webp",
-    title: "Robust Wire-Reinforced Monkey Safety Nets",
-    titlePrefix: "Robust Wire-Reinforced ",
-    titleHighlight: "Monkey Safety Nets",
-    titleSuffix: "",
-    subtitle: "Bite-proof and tear-resistant thick safety nets that block monkeys while maintaining ventilation.",
-    tagline: "Bite-Resistant & Sturdy"
-  },
-  {
-    image: "/images/clientwork (9).webp",
+    image: "/images/carousel_bird_protection.webp",
     title: "Building Duct & Open Shaft Bird Protection",
-    titlePrefix: "Building Duct & Open Shaft ",
+    titlePrefix: "Building Duct & Shaft ",
     titleHighlight: "Bird Protection Nets",
     titleSuffix: "",
-    subtitle: "Block birds from nesting in vertical duct areas and building voids with industrial-grade netting.",
-    tagline: "Industrial-Grade Quality"
+    subtitle: "Block birds from nesting in vertical duct areas and building voids with industrial-grade heavy netting.",
+    tagline: "Industrial-Grade Quality • 3-Yr Warranty",
+    badge: "Apartments & Commercial"
   },
   {
-    image: "/images/clothhanger.webp",
+    image: "/images/carousel_cricket_net.webp",
+    title: "Professional Cricket & Sports Practice Nets",
+    titlePrefix: "Professional ",
+    titleHighlight: "Cricket & Sports Nets",
+    titleSuffix: " Setup",
+    subtitle: "Custom-sized heavy-duty outdoor netting systems perfect for terrace cricket pitches and sports grounds.",
+    tagline: "UV-Stabilized Nets • Custom Sizes",
+    badge: "Terrace & Box Cricket"
+  },
+  {
+    image: "/images/carousel_monkey_net.webp",
+    title: "Robust Wire-Reinforced Monkey Safety Nets",
+    titlePrefix: "Robust Wire-Reinforced ",
+    titleHighlight: "Monkey Nets",
+    titleSuffix: "",
+    subtitle: "Bite-proof and tear-resistant thick safety nets that block monkeys while maintaining full airflow & light.",
+    tagline: "Bite-Resistant & Heavy Duty Wire",
+    badge: "100% Monkey Proof"
+  },
+  {
+    image: "/images/carousel_cloth_hanger.webp",
     title: "Ceiling-Mounted Space-Saving Cloth Hangers",
-    titlePrefix: "Ceiling-Mounted Space-Saving ",
-    titleHighlight: "Cloth Hangers",
+    titlePrefix: "Ceiling Space-Saving ",
+    titleHighlight: "Cloth Drying Hangers",
     titleSuffix: "",
     subtitle: "Premium pulley-operated stainless steel drying rods for efficient balcony space management.",
-    tagline: "Heavy-Duty Pulley System"
+    tagline: "Rust-Proof Stainless Steel • Easy Pulley",
+    badge: "Free Installation"
   }
 ];
 
