@@ -186,9 +186,9 @@ export default function RootLayout({
         {/* Google tag (gtag.js) */}
         <Script 
           src="https://www.googletagmanager.com/gtag/js?id=G-WFKSLS9GSE" 
-          strategy="lazyOnload" 
+          strategy="afterInteractive" 
         />
-        <Script id="google-analytics" strategy="lazyOnload">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -199,7 +199,7 @@ export default function RootLayout({
         </Script>
         
         {/* Event snippet for Contact conversion page */}
-        <Script id="google-conversion" strategy="lazyOnload">
+        <Script id="google-conversion" strategy="afterInteractive">
           {`
             function gtag_report_conversion(url) {
               var callback = function () {
@@ -217,7 +217,7 @@ export default function RootLayout({
         </Script>
 
         {/* Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="lazyOnload">
+        <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

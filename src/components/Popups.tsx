@@ -33,15 +33,24 @@ export default function Popups() {
     const hasBeenShown = localStorage.getItem("priyanka_popup_dismissed");
     if (hasBeenShown === "true") return;
 
-    // 1. Timed Popup after 20 seconds
+    // 1. High Conversion Timed Popup after 6 seconds for Ad Visitors
     const timedTimer = setTimeout(() => {
       setFormType("timed");
       setIsOpen(true);
-    }, 20000); // 20 seconds
+    }, 6000);
 
-    // 2. Exit Intent Popup (desktop only)
+    // 2. Scroll Trigger for Mobile & Desktop Ad Traffic
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setFormType("timed");
+        setIsOpen(true);
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // 3. Exit Intent Popup (desktop only)
     const handleMouseLeave = (e: MouseEvent) => {
-      // e.clientY < 20 means mouse moved near/above address bar
       if (e.clientY < 20) {
         setFormType("exit");
         setIsOpen(true);
@@ -53,6 +62,7 @@ export default function Popups() {
 
     return () => {
       clearTimeout(timedTimer);
+      window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);

@@ -62,7 +62,7 @@ export default function FloatingCTAs() {
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-xl cursor-pointer transition-colors duration-200 relative group border border-white/20"
+        className="flex items-center justify-center w-13 h-13 sm:w-14 sm:h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-2xl shadow-emerald-500/40 cursor-pointer transition-colors duration-200 relative group border border-white/30 ring-4 ring-emerald-500/20 animate-pulse"
         aria-label="Chat on WhatsApp"
       >
         <svg className="w-6 h-6 sm:w-7 sm:h-7 fill-white" viewBox="0 0 24 24">
@@ -81,10 +81,10 @@ export default function FloatingCTAs() {
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white rounded-full shadow-xl cursor-pointer transition-colors duration-200 relative group border border-white/20"
+        className="flex items-center justify-center w-13 h-13 sm:w-14 sm:h-14 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white rounded-full shadow-2xl shadow-orange-500/40 cursor-pointer transition-colors duration-200 relative group border border-white/30 ring-4 ring-orange-500/30"
         aria-label="Call Customer Care"
       >
-        <Phone className="w-5 h-5 sm:w-6 sm:h-6 fill-white animate-pulse" />
+        <Phone className="w-5 h-5 sm:w-6 sm:h-6 fill-white animate-bounce" />
         <span className="hidden sm:block absolute right-16 bg-slate-900 text-white text-xs px-2.5 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
           Call +91 81214 88961
         </span>
