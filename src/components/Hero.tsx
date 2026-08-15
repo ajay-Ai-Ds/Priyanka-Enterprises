@@ -14,7 +14,7 @@ const slides = [
     titleHighlight: "Invisible Grills",
     titleSuffix: " for Modern Apartments",
     subtitle: "Protect your children & pets with 400kg tensile strength while enjoying 100% unobstructed panoramic balcony views.",
-    tagline: "Starts @ ₹140/sq ft • 5-Yr Warranty",
+    tagline: "Marine Grade SS 316 • 5-Yr Warranty",
     badge: "Most Popular in Hyderabad"
   },
   {
@@ -24,7 +24,7 @@ const slides = [
     titleHighlight: "Pigeon Safety Nets",
     titleSuffix: " Installation",
     subtitle: "Keep your balcony 100% clean, hygienic, and bird-free with heavy-duty UV-stabilized translucent netting.",
-    tagline: "Starting @ ₹15/sq ft • Same Day Service",
+    tagline: "100% Bird-Proof • Same Day Service",
     badge: "Instant 2-Hour Technician Visit"
   },
   {
