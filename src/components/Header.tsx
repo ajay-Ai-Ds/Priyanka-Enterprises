@@ -257,15 +257,14 @@ export default function Header() {
               <a
                 href="tel:+918121488961"
                 onClick={() => trackGoogleConversion()}
-                className="flex items-center space-x-1.5 px-3 py-2 rounded-xl bg-gradient-to-r from-orange-500 to-amber-600 text-white font-extrabold text-xs shadow-md transition-all active:scale-95 border border-white/20"
+                className="w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-r from-orange-500 to-amber-600 text-white shadow-md transition-all active:scale-95 border border-white/20"
                 aria-label="Call +91 81214 88961"
               >
-                <Phone className="w-4 h-4 fill-white animate-pulse" />
-                <span className="font-mono text-[11px] sm:text-xs tracking-tight">+91 81214 88961</span>
+                <Phone className="w-5 h-5 fill-white animate-pulse" />
               </a>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="w-11 h-11 flex items-center justify-center rounded-xl transition-colors border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-800"
+                className="w-10 h-10 flex items-center justify-center rounded-xl transition-colors border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-800"
                 aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               >
                 {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

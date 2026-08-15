@@ -8,7 +8,7 @@ import { handleLeadSubmission, trackGoogleConversion } from "@/utils/conversion"
 
 const slides = [
   {
-    image: "/images/carousel_invisible_grill.webp",
+    image: "/images/balcony.webp",
     title: "SS 316 Invisible Grills for Hyderabad Apartments",
     titlePrefix: "Marine Grade SS 316 ",
     titleHighlight: "Invisible Grills",
@@ -209,7 +209,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Base image rendered immediately for instant LCP */}
         <Image
-          src="/images/pigeonsafetynet.webp"
+          src="/images/balcony.webp"
           alt="Priyanka Enterprises Safety Nets Hyderabad"
           fill
           priority
@@ -251,14 +251,30 @@ export default function Hero() {
 
           {/* Hero Left Content */}
           <div className="lg:col-span-8 space-y-6">
-            <div className="min-h-[36px] sm:min-h-[40px] flex items-center">
+            <div className="flex flex-wrap items-center gap-3">
+              {/* Visible Phone Number CTA Pill at Upside of Carousel */}
+              <motion.a
+                href="tel:+918121488961"
+                onClick={() => trackGoogleConversion()}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white font-extrabold shadow-xl hover:shadow-orange-500/40 hover:scale-105 active:scale-95 transition-all duration-300 border border-white/30 backdrop-blur-md cursor-pointer group"
+                aria-label="Call +91 81214 88961"
+              >
+                <div className="bg-white/20 p-1.5 rounded-full group-hover:bg-white/30 transition-colors">
+                  <Phone className="w-4 h-4 fill-white animate-pulse" />
+                </div>
+                <span className="text-xs sm:text-sm font-medium text-amber-100">Call Now:</span>
+                <span className="font-mono tracking-tight font-black text-sm sm:text-base text-white">+91 81214 88961</span>
+              </motion.a>
+
               <motion.span
                 key={`tag-${currentSlide}`}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full text-xs sm:text-sm font-extrabold uppercase tracking-wider bg-[#f97316] text-slate-900 shadow-md whitespace-nowrap"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs sm:text-sm font-extrabold uppercase tracking-wider bg-slate-900/80 text-white border border-white/20 shadow-md whitespace-nowrap backdrop-blur-md"
               >
-                <Shield className="w-4 h-4 text-white" />
+                <Shield className="w-4 h-4 text-orange-400" />
                 {slides[currentSlide].tagline}
               </motion.span>
             </div>
